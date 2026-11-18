@@ -1,0 +1,41 @@
+/* MATHLAB LEARN — PHASE 1 */
+.learn-page { width:100%; }
+.learn-hero,.learn-chapter-hero { padding:12px 0 35px; }
+.learn-hero h1,.learn-chapter-hero h1 { max-width:850px; color:var(--color-primary); font-size:clamp(38px,5vw,62px); line-height:1.08; letter-spacing:-2.5px; }
+.learn-hero h1 span { color:#6C8D20; }
+.learn-overview-stats { display:flex; flex-wrap:wrap; gap:12px; margin-top:27px; }
+.learn-overview-stats div { min-width:112px; padding:14px 17px; display:flex; flex-direction:column; gap:5px; background:#fff; border:1px solid var(--color-border); border-radius:9px; }
+.learn-overview-stats strong { color:var(--color-primary); font-size:23px; }
+.learn-overview-stats span { color:var(--color-muted); font-size:11px; }
+.learn-library { margin-top:10px; }
+.learn-section-heading { display:flex; align-items:center; justify-content:space-between; gap:15px; margin-bottom:19px; }
+.learn-section-heading h2 { margin-top:6px; color:var(--color-primary); font-size:25px; letter-spacing:-.8px; }
+.learn-syllabus-label,.learn-topic-count { color:var(--color-muted); font-size:10px; font-weight:700; letter-spacing:1px; }
+.learn-unit { margin-bottom:17px; padding:21px; background:#fff; border:1px solid var(--color-border); border-radius:12px; }
+.learn-unit-heading { display:flex; align-items:center; justify-content:space-between; gap:15px; margin-bottom:15px; }
+.learn-unit-number { color:#718F2B; font-size:10px; font-weight:800; letter-spacing:1.5px; }
+.learn-unit-heading h2 { margin-top:5px; color:var(--color-primary); font-size:19px; }
+.learn-unit-marks { flex-shrink:0; color:var(--color-muted); font-size:11px; font-weight:700; }
+.learn-chapter-list { display:grid; grid-template-columns:1fr; gap:9px; }
+.learn-chapter-card { width:100%; min-height:82px; padding:14px; display:flex; align-items:center; gap:14px; text-align:left; background:var(--color-secondary); border:1px solid var(--color-border); border-radius:8px; cursor:pointer; transition:border-color .2s ease,transform .2s ease,background .2s ease; }
+.learn-chapter-card:hover,.learn-chapter-card.selected { background:#fff; border-color:#A5CF45; transform:translateY(-1px); }
+.learn-chapter-number { width:39px; height:39px; flex-shrink:0; display:grid; place-items:center; background:var(--color-primary); border-radius:7px; color:var(--color-accent); font-size:12px; font-weight:800; }
+.learn-chapter-copy { min-width:0; flex:1; }
+.learn-chapter-copy strong { display:block; color:var(--color-primary); font-size:13px; line-height:1.4; }
+.learn-chapter-copy>span { display:block; margin-top:4px; color:var(--color-muted); font-size:11px; line-height:1.5; }
+.learn-chapter-status { flex-shrink:0; color:#617E27; font-size:10px; font-weight:700; }
+.learn-source-note { margin:18px 2px 30px; color:var(--color-muted); font-size:11px; line-height:1.7; }
+.learn-back-button { margin:0 0 24px; padding:9px 0; background:transparent; border:0; color:#5F7E22; font-size:12px; font-weight:700; cursor:pointer; }
+.learn-back-button:hover { text-decoration:underline; }
+.learn-content-panel,.learn-roadmap-panel { margin-bottom:18px; padding:24px; background:#fff; border:1px solid var(--color-border); border-radius:12px; }
+.learn-syllabus-list { display:flex; flex-direction:column; gap:0; list-style:none; }
+.learn-syllabus-topic { display:flex; align-items:flex-start; gap:13px; padding:14px 0; border-bottom:1px solid #EEF0E9; }
+.learn-syllabus-topic:last-child { border-bottom:0; }
+.learn-syllabus-topic>span { width:27px; height:27px; flex-shrink:0; display:grid; place-items:center; background:#EFF3E7; border-radius:6px; color:#5F7E22; font-size:10px; font-weight:800; }
+.learn-syllabus-topic p { padding-top:4px; color:var(--color-text); font-size:13px; line-height:1.6; }
+.learn-roadmap-panel { background:#F0F3E9; border-color:#DDE5CF; }
+.learn-roadmap-panel h2 { margin-top:9px; color:var(--color-primary); font-size:21px; }
+.learn-roadmap-panel>p:not(.panel-kicker) { max-width:760px; margin-top:10px; color:#62695A; font-size:13px; line-height:1.7; }
+.learn-roadmap-steps { display:flex; flex-wrap:wrap; gap:8px; margin-top:18px; }
+.learn-roadmap-steps span { padding:9px 11px; background:#fff; border:1px solid #DDE5CF; border-radius:6px; color:#536C27; font-size:10px; font-weight:700; }
+@media(max-width:600px) { .learn-unit{padding:16px}.learn-chapter-card{align-items:flex-start;gap:10px}.learn-chapter-number{width:33px;height:33px}.learn-chapter-status{padding-top:3px;font-size:9px}.learn-content-panel,.learn-roadmap-panel{padding:17px}.learn-section-heading h2{font-size:21px}.learn-unit-marks{font-size:10px} }
